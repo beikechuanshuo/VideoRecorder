@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54C88C720EA00A000EEC456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88C620EA00A000EEC456 /* AppDelegate.m */; };
+		C54C88CA20EA00A000EEC456 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88C920EA00A000EEC456 /* ViewController.m */; };
+		C54C88CD20EA00A000EEC456 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C88CB20EA00A000EEC456 /* Main.storyboard */; };
+		C54C88CF20EA00A100EEC456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54C88CE20EA00A100EEC456 /* Assets.xcassets */; };
+		C54C88D220EA00A100EEC456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54C88D020EA00A100EEC456 /* LaunchScreen.storyboard */; };
+		C54C88D520EA00A100EEC456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88D420EA00A100EEC456 /* main.m */; };
+		C54C893620EA00EC00EEC456 /* UIApplication+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88DD20EA00EC00EEC456 /* UIApplication+Extension.m */; };
+		C54C893720EA00EC00EEC456 /* NSData+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88DE20EA00EC00EEC456 /* NSData+Extension.m */; };
+		C54C893820EA00EC00EEC456 /* UITextField+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88DF20EA00EC00EEC456 /* UITextField+Extension.m */; };
+		C54C893920EA00EC00EEC456 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88E220EA00EC00EEC456 /* UILabel+Extension.m */; };
+		C54C893A20EA00EC00EEC456 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88E620EA00EC00EEC456 /* UIImage+Extension.m */; };
+		C54C893B20EA00EC00EEC456 /* HAuthorizationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88E720EA00EC00EEC456 /* HAuthorizationCenter.m */; };
+		C54C893C20EA00EC00EEC456 /* NSFileManager+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88EA20EA00EC00EEC456 /* NSFileManager+Extension.m */; };
+		C54C893D20EA00EC00EEC456 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88EC20EA00EC00EEC456 /* NSDate+Extension.m */; };
+		C54C893E20EA00EC00EEC456 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88ED20EA00EC00EEC456 /* UIColor+Extension.m */; };
+		C54C893F20EA00EC00EEC456 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88EE20EA00EC00EEC456 /* NSString+Extension.m */; };
+		C54C894020EA00EC00EEC456 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88F320EA00EC00EEC456 /* UIBarButtonItem+Extension.m */; };
+		C54C894120EA00EC00EEC456 /* CALayer+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88F420EA00EC00EEC456 /* CALayer+Extension.m */; };
+		C54C894220EA00EC00EEC456 /* HHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88F720EA00EC00EEC456 /* HHUDViewController.m */; };
+		C54C894320EA00EC00EEC456 /* HCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88F920EA00EC00EEC456 /* HCircleView.m */; };
+		C54C894420EA00EC00EEC456 /* HRecordVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88FA20EA00EC00EEC456 /* HRecordVideoEncoder.m */; };
+		C54C894520EA00EC00EEC456 /* HRecordProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88FB20EA00EC00EEC456 /* HRecordProgressView.m */; };
+		C54C894620EA00EC00EEC456 /* HNewRecordingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88FD20EA00EC00EEC456 /* HNewRecordingViewController.m */; };
+		C54C894720EA00EC00EEC456 /* AVSEAddMusicCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C88FF20EA00EC00EEC456 /* AVSEAddMusicCommand.m */; };
+		C54C894820EA00EC00EEC456 /* AVSEExportCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890020EA00EC00EEC456 /* AVSEExportCommand.m */; };
+		C54C894920EA00EC00EEC456 /* AVSECommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890120EA00EC00EEC456 /* AVSECommand.m */; };
+		C54C894A20EA00EC00EEC456 /* AVSECropCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890220EA00EC00EEC456 /* AVSECropCommand.m */; };
+		C54C894B20EA00EC00EEC456 /* AVSETrimCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890420EA00EC00EEC456 /* AVSETrimCommand.m */; };
+		C54C894C20EA00EC00EEC456 /* AVSEAddWatermarkCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890520EA00EC00EEC456 /* AVSEAddWatermarkCommand.m */; };
+		C54C894D20EA00EC00EEC456 /* AVSERotateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C890A20EA00EC00EEC456 /* AVSERotateCommand.m */; };
+		C54C894E20EA00EC00EEC456 /* videorecordcancelHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C890F20EA00EC00EEC456 /* videorecordcancelHL@3x.png */; };
+		C54C894F20EA00EC00EEC456 /* videorecordsendHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891020EA00EC00EEC456 /* videorecordsendHL@2x.png */; };
+		C54C895020EA00EC00EEC456 /* videorecordcancelHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891120EA00EC00EEC456 /* videorecordcancelHL@2x.png */; };
+		C54C895120EA00EC00EEC456 /* videorecordsendHL@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891220EA00EC00EEC456 /* videorecordsendHL@3x.png */; };
+		C54C895220EA00EC00EEC456 /* videorecordsend@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891320EA00EC00EEC456 /* videorecordsend@2x.png */; };
+		C54C895320EA00EC00EEC456 /* videorecordcancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891420EA00EC00EEC456 /* videorecordcancel@3x.png */; };
+		C54C895420EA00EC00EEC456 /* videorecordcancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891520EA00EC00EEC456 /* videorecordcancel@2x.png */; };
+		C54C895520EA00EC00EEC456 /* videorecordsend@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C54C891620EA00EC00EEC456 /* videorecordsend@3x.png */; };
+		C54C895620EA00EC00EEC456 /* HRecordingCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C891A20EA00EC00EEC456 /* HRecordingCircleButton.m */; };
+		C54C895720EA00EC00EEC456 /* HRecordVideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C891C20EA00EC00EEC456 /* HRecordVideoManager.m */; };
+		C54C895820EA00EC00EEC456 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C891E20EA00EC00EEC456 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C54C895920EA00EC00EEC456 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C892220EA00EC00EEC456 /* SFHFKeychainUtils.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C54C895A20EA00EC00EEC456 /* HDevice+Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C892420EA00EC00EEC456 /* HDevice+Sound.m */; };
+		C54C895B20EA00EC00EEC456 /* HDevice+Network.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C892720EA00EC00EEC456 /* HDevice+Network.m */; };
+		C54C895C20EA00EC00EEC456 /* HDevice+Motion.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C892A20EA00EC00EEC456 /* HDevice+Motion.m */; };
+		C54C895D20EA00EC00EEC456 /* HSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C892E20EA00EC00EEC456 /* HSystem.m */; };
+		C54C895E20EA00EC00EEC456 /* HAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C893220EA00EC00EEC456 /* HAppInfo.m */; };
+		C54C895F20EA00EC00EEC456 /* HDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C54C893420EA00EC00EEC456 /* HDevice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C54C88C220EA00A000EEC456 /* VideoRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54C88C520EA00A000EEC456 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C54C88C620EA00A000EEC456 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C54C88C820EA00A000EEC456 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C54C88C920EA00A000EEC456 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C54C88CC20EA00A000EEC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54C88CE20EA00A100EEC456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54C88D120EA00A100EEC456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54C88D320EA00A100EEC456 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54C88D420EA00A100EEC456 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C54C88DD20EA00EC00EEC456 /* UIApplication+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extension.m"; sourceTree = "<group>"; };
+		C54C88DE20EA00EC00EEC456 /* NSData+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Extension.m"; sourceTree = "<group>"; };
+		C54C88DF20EA00EC00EEC456 /* UITextField+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Extension.m"; sourceTree = "<group>"; };
+		C54C88E020EA00EC00EEC456 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		C54C88E120EA00EC00EEC456 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		C54C88E220EA00EC00EEC456 /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		C54C88E320EA00EC00EEC456 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		C54C88E420EA00EC00EEC456 /* NSFileManager+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Extension.h"; sourceTree = "<group>"; };
+		C54C88E520EA00EC00EEC456 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		C54C88E620EA00EC00EEC456 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		C54C88E720EA00EC00EEC456 /* HAuthorizationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAuthorizationCenter.m; sourceTree = "<group>"; };
+		C54C88E820EA00EC00EEC456 /* CALayer+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Extension.h"; sourceTree = "<group>"; };
+		C54C88E920EA00EC00EEC456 /* UIApplication+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extension.h"; sourceTree = "<group>"; };
+		C54C88EA20EA00EC00EEC456 /* NSFileManager+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Extension.m"; sourceTree = "<group>"; };
+		C54C88EB20EA00EC00EEC456 /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		C54C88EC20EA00EC00EEC456 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		C54C88ED20EA00EC00EEC456 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		C54C88EE20EA00EC00EEC456 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		C54C88EF20EA00EC00EEC456 /* UITextField+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Extension.h"; sourceTree = "<group>"; };
+		C54C88F020EA00EC00EEC456 /* NSData+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Extension.h"; sourceTree = "<group>"; };
+		C54C88F120EA00EC00EEC456 /* HAuthorizationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAuthorizationCenter.h; sourceTree = "<group>"; };
+		C54C88F220EA00EC00EEC456 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		C54C88F320EA00EC00EEC456 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		C54C88F420EA00EC00EEC456 /* CALayer+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Extension.m"; sourceTree = "<group>"; };
+		C54C88F620EA00EC00EEC456 /* HHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUDViewController.h; sourceTree = "<group>"; };
+		C54C88F720EA00EC00EEC456 /* HHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUDViewController.m; sourceTree = "<group>"; };
+		C54C88F920EA00EC00EEC456 /* HCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCircleView.m; sourceTree = "<group>"; };
+		C54C88FA20EA00EC00EEC456 /* HRecordVideoEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRecordVideoEncoder.m; sourceTree = "<group>"; };
+		C54C88FB20EA00EC00EEC456 /* HRecordProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRecordProgressView.m; sourceTree = "<group>"; };
+		C54C88FC20EA00EC00EEC456 /* HRecordVideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRecordVideoManager.h; sourceTree = "<group>"; };
+		C54C88FD20EA00EC00EEC456 /* HNewRecordingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HNewRecordingViewController.m; sourceTree = "<group>"; };
+		C54C88FF20EA00EC00EEC456 /* AVSEAddMusicCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSEAddMusicCommand.m; sourceTree = "<group>"; };
+		C54C890020EA00EC00EEC456 /* AVSEExportCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSEExportCommand.m; sourceTree = "<group>"; };
+		C54C890120EA00EC00EEC456 /* AVSECommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSECommand.m; sourceTree = "<group>"; };
+		C54C890220EA00EC00EEC456 /* AVSECropCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSECropCommand.m; sourceTree = "<group>"; };
+		C54C890320EA00EC00EEC456 /* AVSERotateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSERotateCommand.h; sourceTree = "<group>"; };
+		C54C890420EA00EC00EEC456 /* AVSETrimCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSETrimCommand.m; sourceTree = "<group>"; };
+		C54C890520EA00EC00EEC456 /* AVSEAddWatermarkCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSEAddWatermarkCommand.m; sourceTree = "<group>"; };
+		C54C890620EA00EC00EEC456 /* AVSEAddMusicCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSEAddMusicCommand.h; sourceTree = "<group>"; };
+		C54C890720EA00EC00EEC456 /* AVSECommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSECommand.h; sourceTree = "<group>"; };
+		C54C890820EA00EC00EEC456 /* AVSEExportCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSEExportCommand.h; sourceTree = "<group>"; };
+		C54C890920EA00EC00EEC456 /* AVSETrimCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSETrimCommand.h; sourceTree = "<group>"; };
+		C54C890A20EA00EC00EEC456 /* AVSERotateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSERotateCommand.m; sourceTree = "<group>"; };
+		C54C890B20EA00EC00EEC456 /* AVSECropCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSECropCommand.h; sourceTree = "<group>"; };
+		C54C890C20EA00EC00EEC456 /* AVSEAddWatermarkCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSEAddWatermarkCommand.h; sourceTree = "<group>"; };
+		C54C890D20EA00EC00EEC456 /* HRecordingCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRecordingCircleButton.h; sourceTree = "<group>"; };
+		C54C890F20EA00EC00EEC456 /* videorecordcancelHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordcancelHL@3x.png"; sourceTree = "<group>"; };
+		C54C891020EA00EC00EEC456 /* videorecordsendHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordsendHL@2x.png"; sourceTree = "<group>"; };
+		C54C891120EA00EC00EEC456 /* videorecordcancelHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordcancelHL@2x.png"; sourceTree = "<group>"; };
+		C54C891220EA00EC00EEC456 /* videorecordsendHL@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordsendHL@3x.png"; sourceTree = "<group>"; };
+		C54C891320EA00EC00EEC456 /* videorecordsend@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordsend@2x.png"; sourceTree = "<group>"; };
+		C54C891420EA00EC00EEC456 /* videorecordcancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordcancel@3x.png"; sourceTree = "<group>"; };
+		C54C891520EA00EC00EEC456 /* videorecordcancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordcancel@2x.png"; sourceTree = "<group>"; };
+		C54C891620EA00EC00EEC456 /* videorecordsend@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "videorecordsend@3x.png"; sourceTree = "<group>"; };
+		C54C891720EA00EC00EEC456 /* HRecordVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRecordVideoEncoder.h; sourceTree = "<group>"; };
+		C54C891820EA00EC00EEC456 /* HCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCircleView.h; sourceTree = "<group>"; };
+		C54C891920EA00EC00EEC456 /* HRecordProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HRecordProgressView.h; sourceTree = "<group>"; };
+		C54C891A20EA00EC00EEC456 /* HRecordingCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRecordingCircleButton.m; sourceTree = "<group>"; };
+		C54C891B20EA00EC00EEC456 /* HNewRecordingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HNewRecordingViewController.h; sourceTree = "<group>"; };
+		C54C891C20EA00EC00EEC456 /* HRecordVideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HRecordVideoManager.m; sourceTree = "<group>"; };
+		C54C891E20EA00EC00EEC456 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		C54C891F20EA00EC00EEC456 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		C54C892120EA00EC00EEC456 /* HDeviceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDeviceHeader.h; sourceTree = "<group>"; };
+		C54C892220EA00EC00EEC456 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		C54C892420EA00EC00EEC456 /* HDevice+Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HDevice+Sound.m"; sourceTree = "<group>"; };
+		C54C892520EA00EC00EEC456 /* HDevice+Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HDevice+Sound.h"; sourceTree = "<group>"; };
+		C54C892720EA00EC00EEC456 /* HDevice+Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HDevice+Network.m"; sourceTree = "<group>"; };
+		C54C892820EA00EC00EEC456 /* HDevice+Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HDevice+Network.h"; sourceTree = "<group>"; };
+		C54C892A20EA00EC00EEC456 /* HDevice+Motion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HDevice+Motion.m"; sourceTree = "<group>"; };
+		C54C892B20EA00EC00EEC456 /* HDevice+Motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HDevice+Motion.h"; sourceTree = "<group>"; };
+		C54C892D20EA00EC00EEC456 /* HSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSystem.h; sourceTree = "<group>"; };
+		C54C892E20EA00EC00EEC456 /* HSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSystem.m; sourceTree = "<group>"; };
+		C54C892F20EA00EC00EEC456 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		C54C893120EA00EC00EEC456 /* HAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HAppInfo.h; sourceTree = "<group>"; };
+		C54C893220EA00EC00EEC456 /* HAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HAppInfo.m; sourceTree = "<group>"; };
+		C54C893420EA00EC00EEC456 /* HDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDevice.m; sourceTree = "<group>"; };
+		C54C893520EA00EC00EEC456 /* HDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDevice.h; sourceTree = "<group>"; };
+		C54C896020EA01DE00EEC456 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54C88BF20EA00A000EEC456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54C88B920EA00A000EEC456 = {
+			isa = PBXGroup;
+			children = (
+				C54C88C420EA00A000EEC456 /* VideoRecorder */,
+				C54C88C320EA00A000EEC456 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54C88C320EA00A000EEC456 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88C220EA00A000EEC456 /* VideoRecorder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54C88C420EA00A000EEC456 /* VideoRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88DB20EA00EC00EEC456 /* Recorder */,
+				C54C88C520EA00A000EEC456 /* AppDelegate.h */,
+				C54C88C620EA00A000EEC456 /* AppDelegate.m */,
+				C54C88C820EA00A000EEC456 /* ViewController.h */,
+				C54C88C920EA00A000EEC456 /* ViewController.m */,
+				C54C88CB20EA00A000EEC456 /* Main.storyboard */,
+				C54C88CE20EA00A100EEC456 /* Assets.xcassets */,
+				C54C88D020EA00A100EEC456 /* LaunchScreen.storyboard */,
+				C54C88D320EA00A100EEC456 /* Info.plist */,
+				C54C88D420EA00A100EEC456 /* main.m */,
+				C54C896020EA01DE00EEC456 /* PrefixHeader.pch */,
+			);
+			path = VideoRecorder;
+			sourceTree = "<group>";
+		};
+		C54C88DB20EA00EC00EEC456 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88DC20EA00EC00EEC456 /* HExtension */,
+				C54C88F520EA00EC00EEC456 /* HHUD */,
+				C54C88F820EA00EC00EEC456 /* VideoRecording */,
+				C54C891D20EA00EC00EEC456 /* Reachability */,
+				C54C892020EA00EC00EEC456 /* HDevice */,
+			);
+			path = Recorder;
+			sourceTree = SOURCE_ROOT;
+		};
+		C54C88DC20EA00EC00EEC456 /* HExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88E920EA00EC00EEC456 /* UIApplication+Extension.h */,
+				C54C88DD20EA00EC00EEC456 /* UIApplication+Extension.m */,
+				C54C88F020EA00EC00EEC456 /* NSData+Extension.h */,
+				C54C88DE20EA00EC00EEC456 /* NSData+Extension.m */,
+				C54C88EF20EA00EC00EEC456 /* UITextField+Extension.h */,
+				C54C88DF20EA00EC00EEC456 /* UITextField+Extension.m */,
+				C54C88E020EA00EC00EEC456 /* NSString+Extension.h */,
+				C54C88EE20EA00EC00EEC456 /* NSString+Extension.m */,
+				C54C88E120EA00EC00EEC456 /* UIColor+Extension.h */,
+				C54C88ED20EA00EC00EEC456 /* UIColor+Extension.m */,
+				C54C88EB20EA00EC00EEC456 /* UILabel+Extension.h */,
+				C54C88E220EA00EC00EEC456 /* UILabel+Extension.m */,
+				C54C88E320EA00EC00EEC456 /* NSDate+Extension.h */,
+				C54C88EC20EA00EC00EEC456 /* NSDate+Extension.m */,
+				C54C88E420EA00EC00EEC456 /* NSFileManager+Extension.h */,
+				C54C88EA20EA00EC00EEC456 /* NSFileManager+Extension.m */,
+				C54C88E520EA00EC00EEC456 /* UIBarButtonItem+Extension.h */,
+				C54C88F320EA00EC00EEC456 /* UIBarButtonItem+Extension.m */,
+				C54C88E620EA00EC00EEC456 /* UIImage+Extension.m */,
+				C54C88F220EA00EC00EEC456 /* UIImage+Extension.h */,
+				C54C88E820EA00EC00EEC456 /* CALayer+Extension.h */,
+				C54C88F420EA00EC00EEC456 /* CALayer+Extension.m */,
+				C54C88F120EA00EC00EEC456 /* HAuthorizationCenter.h */,
+				C54C88E720EA00EC00EEC456 /* HAuthorizationCenter.m */,
+			);
+			path = HExtension;
+			sourceTree = "<group>";
+		};
+		C54C88F520EA00EC00EEC456 /* HHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88F620EA00EC00EEC456 /* HHUDViewController.h */,
+				C54C88F720EA00EC00EEC456 /* HHUDViewController.m */,
+			);
+			path = HHUD;
+			sourceTree = "<group>";
+		};
+		C54C88F820EA00EC00EEC456 /* VideoRecording */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88F920EA00EC00EEC456 /* HCircleView.m */,
+				C54C891820EA00EC00EEC456 /* HCircleView.h */,
+				C54C891720EA00EC00EEC456 /* HRecordVideoEncoder.h */,
+				C54C88FA20EA00EC00EEC456 /* HRecordVideoEncoder.m */,
+				C54C891920EA00EC00EEC456 /* HRecordProgressView.h */,
+				C54C88FB20EA00EC00EEC456 /* HRecordProgressView.m */,
+				C54C88FC20EA00EC00EEC456 /* HRecordVideoManager.h */,
+				C54C891C20EA00EC00EEC456 /* HRecordVideoManager.m */,
+				C54C891B20EA00EC00EEC456 /* HNewRecordingViewController.h */,
+				C54C88FD20EA00EC00EEC456 /* HNewRecordingViewController.m */,
+				C54C890D20EA00EC00EEC456 /* HRecordingCircleButton.h */,
+				C54C891A20EA00EC00EEC456 /* HRecordingCircleButton.m */,
+				C54C88FE20EA00EC00EEC456 /* AVEditer */,
+				C54C890E20EA00EC00EEC456 /* Recource */,
+			);
+			path = VideoRecording;
+			sourceTree = "<group>";
+		};
+		C54C88FE20EA00EC00EEC456 /* AVEditer */ = {
+			isa = PBXGroup;
+			children = (
+				C54C88FF20EA00EC00EEC456 /* AVSEAddMusicCommand.m */,
+				C54C890020EA00EC00EEC456 /* AVSEExportCommand.m */,
+				C54C890120EA00EC00EEC456 /* AVSECommand.m */,
+				C54C890220EA00EC00EEC456 /* AVSECropCommand.m */,
+				C54C890320EA00EC00EEC456 /* AVSERotateCommand.h */,
+				C54C890420EA00EC00EEC456 /* AVSETrimCommand.m */,
+				C54C890520EA00EC00EEC456 /* AVSEAddWatermarkCommand.m */,
+				C54C890620EA00EC00EEC456 /* AVSEAddMusicCommand.h */,
+				C54C890720EA00EC00EEC456 /* AVSECommand.h */,
+				C54C890820EA00EC00EEC456 /* AVSEExportCommand.h */,
+				C54C890920EA00EC00EEC456 /* AVSETrimCommand.h */,
+				C54C890A20EA00EC00EEC456 /* AVSERotateCommand.m */,
+				C54C890B20EA00EC00EEC456 /* AVSECropCommand.h */,
+				C54C890C20EA00EC00EEC456 /* AVSEAddWatermarkCommand.h */,
+			);
+			path = AVEditer;
+			sourceTree = "<group>";
+		};
+		C54C890E20EA00EC00EEC456 /* Recource */ = {
+			isa = PBXGroup;
+			children = (
+				C54C890F20EA00EC00EEC456 /* videorecordcancelHL@3x.png */,
+				C54C891020EA00EC00EEC456 /* videorecordsendHL@2x.png */,
+				C54C891120EA00EC00EEC456 /* videorecordcancelHL@2x.png */,
+				C54C891220EA00EC00EEC456 /* videorecordsendHL@3x.png */,
+				C54C891320EA00EC00EEC456 /* videorecordsend@2x.png */,
+				C54C891420EA00EC00EEC456 /* videorecordcancel@3x.png */,
+				C54C891520EA00EC00EEC456 /* videorecordcancel@2x.png */,
+				C54C891620EA00EC00EEC456 /* videorecordsend@3x.png */,
+			);
+			path = Recource;
+			sourceTree = "<group>";
+		};
+		C54C891D20EA00EC00EEC456 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				C54C891F20EA00EC00EEC456 /* Reachability.h */,
+				C54C891E20EA00EC00EEC456 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		C54C892020EA00EC00EEC456 /* HDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C54C892120EA00EC00EEC456 /* HDeviceHeader.h */,
+				C54C892F20EA00EC00EEC456 /* SFHFKeychainUtils.h */,
+				C54C892220EA00EC00EEC456 /* SFHFKeychainUtils.m */,
+				C54C892320EA00EC00EEC456 /* HDevice+Sound */,
+				C54C892620EA00EC00EEC456 /* HDevice+Network */,
+				C54C892920EA00EC00EEC456 /* HDevice+Motion */,
+				C54C892C20EA00EC00EEC456 /* HSystem */,
+				C54C893020EA00EC00EEC456 /* HAppInfo */,
+				C54C893320EA00EC00EEC456 /* HDevice */,
+			);
+			path = HDevice;
+			sourceTree = "<group>";
+		};
+		C54C892320EA00EC00EEC456 /* HDevice+Sound */ = {
+			isa = PBXGroup;
+			children = (
+				C54C892420EA00EC00EEC456 /* HDevice+Sound.m */,
+				C54C892520EA00EC00EEC456 /* HDevice+Sound.h */,
+			);
+			path = "HDevice+Sound";
+			sourceTree = "<group>";
+		};
+		C54C892620EA00EC00EEC456 /* HDevice+Network */ = {
+			isa = PBXGroup;
+			children = (
+				C54C892720EA00EC00EEC456 /* HDevice+Network.m */,
+				C54C892820EA00EC00EEC456 /* HDevice+Network.h */,
+			);
+			path = "HDevice+Network";
+			sourceTree = "<group>";
+		};
+		C54C892920EA00EC00EEC456 /* HDevice+Motion */ = {
+			isa = PBXGroup;
+			children = (
+				C54C892A20EA00EC00EEC456 /* HDevice+Motion.m */,
+				C54C892B20EA00EC00EEC456 /* HDevice+Motion.h */,
+			);
+			path = "HDevice+Motion";
+			sourceTree = "<group>";
+		};
+		C54C892C20EA00EC00EEC456 /* HSystem */ = {
+			isa = PBXGroup;
+			children = (
+				C54C892D20EA00EC00EEC456 /* HSystem.h */,
+				C54C892E20EA00EC00EEC456 /* HSystem.m */,
+			);
+			path = HSystem;
+			sourceTree = "<group>";
+		};
+		C54C893020EA00EC00EEC456 /* HAppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				C54C893120EA00EC00EEC456 /* HAppInfo.h */,
+				C54C893220EA00EC00EEC456 /* HAppInfo.m */,
+			);
+			path = HAppInfo;
+			sourceTree = "<group>";
+		};
+		C54C893320EA00EC00EEC456 /* HDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C54C893420EA00EC00EEC456 /* HDevice.m */,
+				C54C893520EA00EC00EEC456 /* HDevice.h */,
+			);
+			path = HDevice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54C88C120EA00A000EEC456 /* VideoRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C54C88D820EA00A100EEC456 /* Build configuration list for PBXNativeTarget "VideoRecorder" */;
+			buildPhases = (
+				C54C88BE20EA00A000EEC456 /* Sources */,
+				C54C88BF20EA00A000EEC456 /* Frameworks */,
+				C54C88C020EA00A000EEC456 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoRecorder;
+			productName = VideoRecorder;
+			productReference = C54C88C220EA00A000EEC456 /* VideoRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54C88BA20EA00A000EEC456 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = liyanjun;
+				TargetAttributes = {
+					C54C88C120EA00A000EEC456 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C54C88BD20EA00A000EEC456 /* Build configuration list for PBXProject "VideoRecorder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54C88B920EA00A000EEC456;
+			productRefGroup = C54C88C320EA00A000EEC456 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54C88C120EA00A000EEC456 /* VideoRecorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54C88C020EA00A000EEC456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54C894F20EA00EC00EEC456 /* videorecordsendHL@2x.png in Resources */,
+				C54C895020EA00EC00EEC456 /* videorecordcancelHL@2x.png in Resources */,
+				C54C895520EA00EC00EEC456 /* videorecordsend@3x.png in Resources */,
+				C54C894E20EA00EC00EEC456 /* videorecordcancelHL@3x.png in Resources */,
+				C54C895420EA00EC00EEC456 /* videorecordcancel@2x.png in Resources */,
+				C54C895220EA00EC00EEC456 /* videorecordsend@2x.png in Resources */,
+				C54C88D220EA00A100EEC456 /* LaunchScreen.storyboard in Resources */,
+				C54C895120EA00EC00EEC456 /* videorecordsendHL@3x.png in Resources */,
+				C54C88CF20EA00A100EEC456 /* Assets.xcassets in Resources */,
+				C54C895320EA00EC00EEC456 /* videorecordcancel@3x.png in Resources */,
+				C54C88CD20EA00A000EEC456 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54C88BE20EA00A000EEC456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54C88CA20EA00A000EEC456 /* ViewController.m in Sources */,
+				C54C894120EA00EC00EEC456 /* CALayer+Extension.m in Sources */,
+				C54C88D520EA00A100EEC456 /* main.m in Sources */,
+				C54C895D20EA00EC00EEC456 /* HSystem.m in Sources */,
+				C54C893D20EA00EC00EEC456 /* NSDate+Extension.m in Sources */,
+				C54C895820EA00EC00EEC456 /* Reachability.m in Sources */,
+				C54C893C20EA00EC00EEC456 /* NSFileManager+Extension.m in Sources */,
+				C54C894720EA00EC00EEC456 /* AVSEAddMusicCommand.m in Sources */,
+				C54C894A20EA00EC00EEC456 /* AVSECropCommand.m in Sources */,
+				C54C894320EA00EC00EEC456 /* HCircleView.m in Sources */,
+				C54C894B20EA00EC00EEC456 /* AVSETrimCommand.m in Sources */,
+				C54C894520EA00EC00EEC456 /* HRecordProgressView.m in Sources */,
+				C54C894D20EA00EC00EEC456 /* AVSERotateCommand.m in Sources */,
+				C54C893B20EA00EC00EEC456 /* HAuthorizationCenter.m in Sources */,
+				C54C895B20EA00EC00EEC456 /* HDevice+Network.m in Sources */,
+				C54C893920EA00EC00EEC456 /* UILabel+Extension.m in Sources */,
+				C54C894220EA00EC00EEC456 /* HHUDViewController.m in Sources */,
+				C54C893F20EA00EC00EEC456 /* NSString+Extension.m in Sources */,
+				C54C895720EA00EC00EEC456 /* HRecordVideoManager.m in Sources */,
+				C54C893620EA00EC00EEC456 /* UIApplication+Extension.m in Sources */,
+				C54C894020EA00EC00EEC456 /* UIBarButtonItem+Extension.m in Sources */,
+				C54C893E20EA00EC00EEC456 /* UIColor+Extension.m in Sources */,
+				C54C895920EA00EC00EEC456 /* SFHFKeychainUtils.m in Sources */,
+				C54C895620EA00EC00EEC456 /* HRecordingCircleButton.m in Sources */,
+				C54C895F20EA00EC00EEC456 /* HDevice.m in Sources */,
+				C54C895A20EA00EC00EEC456 /* HDevice+Sound.m in Sources */,
+				C54C894620EA00EC00EEC456 /* HNewRecordingViewController.m in Sources */,
+				C54C895E20EA00EC00EEC456 /* HAppInfo.m in Sources */,
+				C54C88C720EA00A000EEC456 /* AppDelegate.m in Sources */,
+				C54C894920EA00EC00EEC456 /* AVSECommand.m in Sources */,
+				C54C894420EA00EC00EEC456 /* HRecordVideoEncoder.m in Sources */,
+				C54C895C20EA00EC00EEC456 /* HDevice+Motion.m in Sources */,
+				C54C894C20EA00EC00EEC456 /* AVSEAddWatermarkCommand.m in Sources */,
+				C54C894820EA00EC00EEC456 /* AVSEExportCommand.m in Sources */,
+				C54C893720EA00EC00EEC456 /* NSData+Extension.m in Sources */,
+				C54C893820EA00EC00EEC456 /* UITextField+Extension.m in Sources */,
+				C54C893A20EA00EC00EEC456 /* UIImage+Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C54C88CB20EA00A000EEC456 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54C88CC20EA00A000EEC456 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54C88D020EA00A100EEC456 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54C88D120EA00A100EEC456 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C54C88D620EA00A100EEC456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C54C88D720EA00A100EEC456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C54C88D920EA00A100EEC456 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KKVK7DJPK2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VideoRecorder/PrefixHeader.pch";
+				INFOPLIST_FILE = VideoRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = derly1125.VideoRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C54C88DA20EA00A100EEC456 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KKVK7DJPK2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VideoRecorder/PrefixHeader.pch";
+				INFOPLIST_FILE = VideoRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = derly1125.VideoRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54C88BD20EA00A000EEC456 /* Build configuration list for PBXProject "VideoRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54C88D620EA00A100EEC456 /* Debug */,
+				C54C88D720EA00A100EEC456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C54C88D820EA00A100EEC456 /* Build configuration list for PBXNativeTarget "VideoRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C54C88D920EA00A100EEC456 /* Debug */,
+				C54C88DA20EA00A100EEC456 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54C88BA20EA00A000EEC456 /* Project object */;
+}
